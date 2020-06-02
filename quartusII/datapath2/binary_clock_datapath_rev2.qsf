@@ -48,3 +48,64 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name BDF_FILE binary_clock_datapath_rev2.bdf
+set_global_assignment -name VERILOG_FILE dual_demux.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE dual_demux_tb.v
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH dual_demux_tb -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME dual_demux_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id dual_demux_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME dual_demux_tb -section_id dual_demux_tb
+set_global_assignment -name QIP_FILE clock_60hz.qip
+set_global_assignment -name QIP_FILE clock_60hz_bit16.qip
+set_global_assignment -name QIP_FILE clock_60hz_b15.qip
+set_global_assignment -name VERILOG_FILE counter_16.v
+set_location_assignment PIN_E1 -to HR_KEY
+set_location_assignment PIN_J15 -to MIN_KEY
+set_location_assignment PIN_M1 -to RST
+set_location_assignment PIN_T8 -to HALT
+set_location_assignment PIN_B9 -to INC_SW
+set_location_assignment PIN_A12 -to ms_out[0]
+set_location_assignment PIN_C11 -to ms_out[1]
+set_location_assignment PIN_E11 -to ms_out[2]
+set_location_assignment PIN_C9 -to ms_out[3]
+set_location_assignment PIN_F9 -to sec_out[0]
+set_location_assignment PIN_E7 -to sec_out[2]
+set_location_assignment PIN_E8 -to sec_out[1]
+set_location_assignment PIN_C8 -to sec_out[3]
+set_location_assignment PIN_A7 -to sec_out[4]
+set_location_assignment PIN_B7 -to sec_out[5]
+set_location_assignment PIN_D6 -to min_out[0]
+set_location_assignment PIN_C6 -to min_out[1]
+set_location_assignment PIN_E6 -to min_out[2]
+set_location_assignment PIN_D8 -to min_out[3]
+set_location_assignment PIN_F8 -to min_out[4]
+set_location_assignment PIN_E9 -to min_out[5]
+set_location_assignment PIN_D9 -to hr_out[0]
+set_location_assignment PIN_E10 -to hr_out[1]
+set_location_assignment PIN_B11 -to hr_out[2]
+set_location_assignment PIN_D11 -to hr_out[3]
+set_location_assignment PIN_B12 -to AMPM
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name VERILOG_FILE datapath_tb.v
+set_global_assignment -name EDA_TEST_BENCH_NAME datapath_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id datapath_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME datapath_tb -section_id datapath_tb
+set_location_assignment PIN_D12 -to clk_60_in
+set_global_assignment -name SDC_FILE output_files/binary_clock_datapath_rev2.sdc
+set_global_assignment -name EDA_TEST_BENCH_FILE dual_demux_tb.v -section_id dual_demux_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE dual_demux.v -section_id dual_demux_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE datapath_tb.v -section_id datapath_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE binary_clock_datapath_rev2.bdf -section_id datapath_tb
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
