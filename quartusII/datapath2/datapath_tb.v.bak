@@ -1,0 +1,20 @@
+`timescale 1 s/ 1 s
+module datapath_tb();
+reg RST, HALT, MIN_KEY, HR_KEY, INC_SW;
+wire[3:0] MS, HOUR;
+wire[5:0] SEC, MIN;
+wire AMPM;
+
+binary_clock_datapath_rev2 bcdr2(.RST(RST),.HALT(HALT),.MIN_KEY(MIN_KEY),.HR_KEY(HR_KEY),.INC_SW(INC_SW),.ms_out(MS),.sec_out(SEC),.min_out(MIN),.hr_out(HOUR),.AMPM(AMPM));
+
+initial begin
+RST <= 0; HALT <= 0; MIN_KEY <= 1; HR_KEY <= 1; INC_SW <= 0;
+#1000;
+HALT <= 1; #10
+MIN_KEY <= 0; #10; MIN_KEY <= 1; HALT <= 0; #10; HALT <=1; HR_KEY <= 0; #10; HR_KEY <= 1; #100;
+RST <= 1; #10; RST <= 0; INC_SW <=1; #10; 
+MIN_KEY <= 0; #10; MIN_KEY <= 1; HALT <= 0; #10; HALT <=1; HR_KEY <= 0; #10; HR_KEY <= 1; #100;
+HALT <= 0; #10; MIN_KEY <=0; #10; MIN_KEY <=1; #1000;
+end
+endmodule
+ 

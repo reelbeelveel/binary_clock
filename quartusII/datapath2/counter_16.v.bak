@@ -1,0 +1,9 @@
+module counter_16(clk, counter_out);
+input clk;
+output reg counter_out[15:0];
+
+always @(posedge clk)
+begin
+    counter_out <= counter_out + 1;
+end
+endmodule
