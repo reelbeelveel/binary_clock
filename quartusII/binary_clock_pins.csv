@@ -21,13 +21,13 @@
 
 To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Strict Preservation
 AMPM,Output,PIN_B12,7,B7_N0,PIN_B12,2.5 V,,,,,
-clk_60_in,Input,PIN_D12,7,B7_N0,PIN_D12,2.5 V,,,,,
+CLOCK_60,Input,PIN_D12,7,B7_N0,PIN_D12,2.5 V,,,,,
 HALT,Input,PIN_T8,3,B3_N0,PIN_T8,2.5 V,,,,,
 HR_KEY,Input,PIN_E1,1,B1_N0,PIN_E1,2.5 V,,,,,
-hr_out[3],Output,PIN_D11,7,B7_N0,PIN_D11,2.5 V,,,,,
-hr_out[2],Output,PIN_B11,7,B7_N0,PIN_B11,2.5 V,,,,,
-hr_out[1],Output,PIN_E10,7,B7_N0,PIN_E10,2.5 V,,,,,
-hr_out[0],Output,PIN_D9,7,B7_N0,PIN_D9,2.5 V,,,,,
+hour_out[3],Output,PIN_D11,7,B7_N0,PIN_D11,2.5 V,,,,,
+hour_out[2],Output,PIN_B11,7,B7_N0,PIN_B11,2.5 V,,,,,
+hour_out[1],Output,PIN_E10,7,B7_N0,PIN_E10,2.5 V,,,,,
+hour_out[0],Output,PIN_D9,7,B7_N0,PIN_D9,2.5 V,,,,,
 INC_SW,Input,PIN_B9,7,B7_N0,PIN_B9,2.5 V,,,,,
 MIN_KEY,Input,PIN_J15,5,B5_N0,PIN_J15,2.5 V,,,,,
 min_out[5],Output,PIN_E9,7,B7_N0,PIN_E9,2.5 V,,,,,
