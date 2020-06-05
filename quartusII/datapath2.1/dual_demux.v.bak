@@ -1,0 +1,10 @@
+module dual_demux(Y0, Y1, SEL, A0, A1, B0, B1);
+input wire Y0, Y1, SEL;
+output A0, A1, B0, B1;
+
+assign A0 = ~SEL & Y0;
+assign A1 = ~SEL & Y1;
+assign B0 = SEL & Y0;
+assign B1 = SEL & Y1;
+
+endmodule
