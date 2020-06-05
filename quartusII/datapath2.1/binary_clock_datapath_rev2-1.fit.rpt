@@ -1,5 +1,5 @@
 Fitter report for binary_clock_datapath_rev2-1
-Tue Jun 02 23:29:46 2020
+Wed Jun 03 18:02:59 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Tue Jun 02 23:29:46 2020       ;
+; Fitter Status                      ; Successful - Wed Jun 03 18:02:59 2020       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; binary_clock_datapath_rev2-1                ;
 ; Top-level Entity Name              ; binary_clock_datapath_rev2_1                ;
@@ -202,7 +202,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/kbelv/src/projects/clock/quartusII/datapath2.1/binary_clock_datapath_rev2-1.pin.
+The pin-out file can be found in C:/Users/kbelv/src/binary_clock/quartusII/datapath2.1/binary_clock_datapath_rev2-1.pin.
 
 
 +---------------------------------------------------------------------+
@@ -794,26 +794,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name              ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; 7490:div_by_10|14 ; FF_X28_Y32_N25     ; 3       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; 7490:div_by_10|7  ; FF_X28_Y32_N31     ; 2       ; Clock        ; yes    ; Global Clock         ; GCLK11           ; --                        ;
-; 7490:div_by_10|9  ; LCCOMB_X28_Y32_N28 ; 3       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; 7490:ms|7         ; FF_X27_Y30_N17     ; 3       ; Clock        ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; 7493:hour|16      ; FF_X31_Y30_N27     ; 8       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; 7493:min_hi|16    ; FF_X29_Y30_N27     ; 4       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; 7493:min_hi|1~1   ; LCCOMB_X29_Y30_N22 ; 7       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; 7493:min_lo|16    ; FF_X30_Y30_N27     ; 6       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; 7493:sec_hi|16    ; FF_X21_Y33_N23     ; 4       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; 7493:sec_hi|1~1   ; LCCOMB_X20_Y33_N22 ; 7       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; 7493:sec_lo|16    ; FF_X20_Y33_N7      ; 6       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; 7490:div_by_10|7  ; FF_X28_Y32_N27     ; 2       ; Clock        ; yes    ; Global Clock         ; GCLK10           ; --                        ;
+; 7490:div_by_10|9  ; LCCOMB_X28_Y32_N8  ; 3       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; 7490:ms|7         ; FF_X26_Y30_N1      ; 3       ; Clock        ; yes    ; Global Clock         ; GCLK11           ; --                        ;
+; 7493:hour|16      ; FF_X28_Y30_N31     ; 8       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; 7493:min_hi|16    ; FF_X28_Y33_N23     ; 4       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; 7493:min_hi|1~1   ; LCCOMB_X28_Y33_N24 ; 7       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; 7493:min_lo|16    ; FF_X27_Y33_N23     ; 6       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; 7493:sec_hi|16    ; FF_X21_Y32_N25     ; 4       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; 7493:sec_hi|1~1   ; LCCOMB_X20_Y32_N0  ; 7       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; 7493:sec_lo|16    ; FF_X20_Y32_N7      ; 6       ; Clock        ; no     ; --                   ; --               ; --                        ;
 ; CLOCK_60          ; PIN_D12            ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
 ; RST               ; PIN_M1             ; 5       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; inst10            ; LCCOMB_X21_Y33_N26 ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; inst19            ; LCCOMB_X31_Y30_N0  ; 5       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; inst21            ; LCCOMB_X30_Y30_N30 ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; inst27            ; LCCOMB_X28_Y30_N28 ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; inst29            ; LCCOMB_X30_Y30_N24 ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; inst3             ; LCCOMB_X28_Y30_N30 ; 4       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; inst5             ; LCCOMB_X27_Y30_N10 ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; inst8331          ; LCCOMB_X30_Y30_N6  ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; inst10            ; LCCOMB_X21_Y32_N28 ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; inst19            ; LCCOMB_X28_Y30_N26 ; 5       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; inst21            ; LCCOMB_X27_Y33_N20 ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; inst27            ; LCCOMB_X28_Y30_N22 ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; inst29            ; LCCOMB_X27_Y33_N14 ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; inst3             ; LCCOMB_X27_Y30_N24 ; 4       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; inst5             ; LCCOMB_X26_Y30_N2  ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; inst8331          ; LCCOMB_X28_Y30_N24 ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
 +-------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -822,8 +822,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name             ; Location       ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; 7490:div_by_10|7 ; FF_X28_Y32_N31 ; 2       ; 0                                    ; Global Clock         ; GCLK11           ; --                        ;
-; 7490:ms|7        ; FF_X27_Y30_N17 ; 3       ; 0                                    ; Global Clock         ; GCLK10           ; --                        ;
+; 7490:div_by_10|7 ; FF_X28_Y32_N27 ; 2       ; 0                                    ; Global Clock         ; GCLK10           ; --                        ;
+; 7490:ms|7        ; FF_X26_Y30_N1  ; 3       ; 0                                    ; Global Clock         ; GCLK11           ; --                        ;
 +------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -832,14 +832,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------+
 ; Routing Resource Type ; Usage                 ;
 +-----------------------+-----------------------+
-; Block interconnects   ; 81 / 71,559 ( < 1 % ) ;
-; C16 interconnects     ; 7 / 2,597 ( < 1 % )   ;
-; C4 interconnects      ; 70 / 46,848 ( < 1 % ) ;
-; Direct links          ; 15 / 71,559 ( < 1 % ) ;
+; Block interconnects   ; 83 / 71,559 ( < 1 % ) ;
+; C16 interconnects     ; 12 / 2,597 ( < 1 % )  ;
+; C4 interconnects      ; 71 / 46,848 ( < 1 % ) ;
+; Direct links          ; 17 / 71,559 ( < 1 % ) ;
 ; Global clocks         ; 2 / 20 ( 10 % )       ;
-; Local interconnects   ; 23 / 24,624 ( < 1 % ) ;
-; R24 interconnects     ; 16 / 2,496 ( < 1 % )  ;
-; R4 interconnects      ; 90 / 62,424 ( < 1 % ) ;
+; Local interconnects   ; 25 / 24,624 ( < 1 % ) ;
+; R24 interconnects     ; 15 / 2,496 ( < 1 % )  ;
+; R4 interconnects      ; 95 / 62,424 ( < 1 % ) ;
 +-----------------------+-----------------------+
 
 
@@ -853,12 +853,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 3                                          ; 1                           ;
 ; 4                                          ; 0                           ;
 ; 5                                          ; 2                           ;
-; 6                                          ; 2                           ;
-; 7                                          ; 1                           ;
-; 8                                          ; 0                           ;
-; 9                                          ; 2                           ;
+; 6                                          ; 3                           ;
+; 7                                          ; 0                           ;
+; 8                                          ; 1                           ;
+; 9                                          ; 0                           ;
 ; 10                                         ; 0                           ;
-; 11                                         ; 0                           ;
+; 11                                         ; 1                           ;
 ; 12                                         ; 0                           ;
 ; 13                                         ; 0                           ;
 ; 14                                         ; 0                           ;
@@ -872,9 +872,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------+-----------------------------+
 ; LAB-wide Signals  (Average = 1.25) ; Number of LABs  (Total = 8) ;
 +------------------------------------+-----------------------------+
-; 1 Async. clear                     ; 3                           ;
-; 1 Clock                            ; 6                           ;
-; 2 Clocks                           ; 1                           ;
+; 1 Async. clear                     ; 4                           ;
+; 1 Clock                            ; 3                           ;
+; 2 Clocks                           ; 3                           ;
 +------------------------------------+-----------------------------+
 
 
@@ -889,29 +889,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 3                                           ; 0                           ;
 ; 4                                           ; 1                           ;
 ; 5                                           ; 0                           ;
-; 6                                           ; 0                           ;
-; 7                                           ; 2                           ;
+; 6                                           ; 1                           ;
+; 7                                           ; 1                           ;
 ; 8                                           ; 0                           ;
 ; 9                                           ; 1                           ;
 ; 10                                          ; 2                           ;
 ; 11                                          ; 0                           ;
-; 12                                          ; 0                           ;
-; 13                                          ; 2                           ;
+; 12                                          ; 1                           ;
+; 13                                          ; 0                           ;
+; 14                                          ; 0                           ;
+; 15                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 3.75) ; Number of LABs  (Total = 8) ;
+; Number of Signals Sourced Out  (Average = 3.63) ; Number of LABs  (Total = 8) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
 ; 1                                               ; 0                           ;
 ; 2                                               ; 2                           ;
 ; 3                                               ; 2                           ;
 ; 4                                               ; 1                           ;
-; 5                                               ; 2                           ;
-; 6                                               ; 1                           ;
+; 5                                               ; 3                           ;
 +-------------------------------------------------+-----------------------------+
 
 
@@ -922,11 +923,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
-; 2                                           ; 3                           ;
+; 2                                           ; 2                           ;
 ; 3                                           ; 1                           ;
-; 4                                           ; 1                           ;
-; 5                                           ; 1                           ;
-; 6                                           ; 2                           ;
+; 4                                           ; 2                           ;
+; 5                                           ; 3                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1062,17 +1062,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------------------------+-------------------+
 ; Source Clock(s)                        ; Destination Clock(s)      ; Delay Added in ns ;
 +----------------------------------------+---------------------------+-------------------+
+; HALT,7493:min_lo|16                    ; HALT,7493:min_lo|16       ; 3.8               ;
+; HALT,7493:sec_hi|16                    ; HALT,7493:sec_hi|16       ; 3.6               ;
+; HALT,7493:min_hi|16                    ; HALT,7493:min_hi|16       ; 3.6               ;
 ; CLOCK_60                               ; CLOCK_60                  ; 3.6               ;
 ; 7490:div_by_10|7                       ; 7490:div_by_10|7          ; 3.4               ;
-; HALT,7493:sec_hi|16                    ; HALT,7493:sec_hi|16       ; 3.3               ;
-; HALT,7493:min_lo|16                    ; HALT,7493:min_lo|16       ; 2.9               ;
-; HALT,7493:min_hi|16                    ; HALT,7493:min_hi|16       ; 2.8               ;
-; 7490:ms|7                              ; 7490:ms|7                 ; 2.7               ;
-; HALT,7493:min_lo|16,7493:min_hi|16,I/O ; HALT,7493:min_lo|16       ; 2.4               ;
-; 7490:ms|19,7490:ms|7                   ; 7490:ms|19,7490:ms|7      ; 2.3               ;
-; HALT,7493:min_lo|16,7493:min_hi|16,I/O ; 7493:min_lo|16            ; 2.2               ;
+; HALT,7493:min_lo|16,7493:min_hi|16,I/O ; HALT,7493:min_lo|16       ; 2.8               ;
+; HALT,7493:min_lo|16,7493:min_hi|16,I/O ; 7493:min_lo|16            ; 2.4               ;
+; 7490:ms|7                              ; 7490:ms|7                 ; 2.4               ;
+; 7490:ms|19,7490:ms|7                   ; 7490:ms|19,7490:ms|7      ; 2.4               ;
+; 7493:hour|16,I/O                       ; 7493:hour|16              ; 2.3               ;
 ; 7490:div_by_10|7                       ; 7490:div_by_10|7,CLOCK_60 ; 2.0               ;
-; 7490:div_by_10|14                      ; 7490:div_by_10|14         ; 1.4               ;
+; 7490:div_by_10|14                      ; 7490:div_by_10|14         ; 1.7               ;
 ; 7493:sec_lo|16                         ; 7493:sec_lo|16            ; 1.3               ;
 ; 7493:sec_lo|16,7493:sec_hi|16,I/O      ; 7490:ms|19,7490:ms|7      ; 1.2               ;
 +----------------------------------------+---------------------------+-------------------+
@@ -1085,27 +1086,27 @@ This will disable optimization of problematic paths and expose them for further 
 +-------------------+----------------------+-------------------+
 ; Source Register   ; Destination Register ; Delay Added in ns ;
 +-------------------+----------------------+-------------------+
+; 7493:min_hi|16    ; 7493:min_hi|16       ; 3.775             ;
+; 7493:min_lo|16    ; 7493:min_lo|16       ; 3.624             ;
+; 7493:hour|16      ; 7493:hour|16         ; 3.581             ;
 ; 7490:div_by_10|7  ; 7490:div_by_10|7     ; 3.570             ;
-; 7493:min_lo|16    ; 7493:min_lo|16       ; 3.300             ;
-; 7493:min_hi|16    ; 7493:min_hi|16       ; 2.879             ;
 ; 7490:div_by_10|14 ; 7490:div_by_10|11    ; 2.828             ;
-; 7493:hour|16      ; 7493:hour|16         ; 2.782             ;
-; 7490:ms|19        ; 7490:ms|11           ; 2.720             ;
-; 7493:min_hi|15    ; 7493:min_hi|16       ; 2.390             ;
-; 7493:min_lo|13    ; 7493:min_hi|16       ; 2.390             ;
-; 7493:min_lo|14    ; 7493:min_hi|16       ; 2.390             ;
-; RST               ; 7493:min_hi|16       ; 2.390             ;
-; 7493:sec_lo|16    ; 7493:sec_lo|16       ; 2.331             ;
-; 7490:ms|7         ; 7490:ms|7            ; 1.398             ;
+; 7493:min_hi|15    ; 7493:min_hi|16       ; 2.772             ;
+; 7493:min_lo|13    ; 7493:min_hi|16       ; 2.772             ;
+; 7493:min_lo|14    ; 7493:min_hi|16       ; 2.772             ;
+; RST               ; 7493:min_hi|16       ; 2.772             ;
+; 7490:ms|19        ; 7490:ms|11           ; 2.416             ;
+; 7493:sec_lo|16    ; 7493:sec_lo|16       ; 2.357             ;
+; 7493:hour|13      ; 7493:hour|15         ; 2.292             ;
+; 7493:hour|14      ; 7493:hour|15         ; 2.292             ;
+; 7490:ms|7         ; 7490:ms|7            ; 1.716             ;
 ; 7493:sec_hi|16    ; 7493:sec_hi|16       ; 1.322             ;
-; 7493:sec_hi|15    ; 7493:sec_lo|16       ; 1.188             ;
-; 7493:sec_lo|13    ; 7493:sec_lo|16       ; 1.188             ;
-; 7493:sec_lo|14    ; 7493:sec_lo|16       ; 1.188             ;
+; 7493:sec_hi|15    ; 7493:sec_lo|16       ; 1.211             ;
+; 7493:sec_lo|13    ; 7493:sec_lo|16       ; 1.211             ;
+; 7493:sec_lo|14    ; 7493:sec_lo|16       ; 1.211             ;
 ; 7490:div_by_10|11 ; 7490:div_by_10|11    ; 0.806             ;
-; 7493:hour|13      ; 7493:hour|15         ; 0.789             ;
-; 7493:hour|14      ; 7493:hour|15         ; 0.789             ;
-; HALT              ; 7490:ms|11           ; 0.556             ;
-; 7490:ms|11        ; 7490:ms|11           ; 0.540             ;
+; 7490:ms|11        ; 7490:ms|11           ; 0.501             ;
+; HALT              ; 7490:ms|11           ; 0.193             ;
 +-------------------+----------------------+-------------------+
 Note: This table only shows the top 21 path(s) that have the largest delay added for hold.
 
@@ -1162,16 +1163,16 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.30 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.31 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file C:/Users/kbelv/src/projects/clock/quartusII/datapath2.1/binary_clock_datapath_rev2-1.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/kbelv/src/binary_clock/quartusII/datapath2.1/binary_clock_datapath_rev2-1.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 5551 megabytes
-    Info: Processing ended: Tue Jun 02 23:29:46 2020
+    Info: Peak virtual memory: 5548 megabytes
+    Info: Processing ended: Wed Jun 03 18:02:59 2020
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:07
 
@@ -1179,6 +1180,6 @@ Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/kbelv/src/projects/clock/quartusII/datapath2.1/binary_clock_datapath_rev2-1.fit.smsg.
+The suppressed messages can be found in C:/Users/kbelv/src/binary_clock/quartusII/datapath2.1/binary_clock_datapath_rev2-1.fit.smsg.
 
 
