@@ -3,9 +3,9 @@ The main objective of this project was to create a functioning digital clock usi
 # clock datapath revision 1
 My first revision of the clock's main datapath was a BEAST. At this time, I was still pretty committed to building the system using low level components only, so this circuit board was monstrous.
 
-![Alt text](/../master/images/EAGLE/clock_datapath_rev1.png?raw=true)
+![Alt text](/EAGLE/datapath/images/clock_datapath_rev1.png?raw=true)
 
 In the second revision, (coming soon) I plan on replacing the adder/and/register structure (pictured below for the millisecond system) with a simple decade counter (7493). In my rough sketches, this has reduced the number of ICs from 26 to ~16 or so.
 
-![Alt_text](/../master/images/EAGLE/rev1_ms_subsystem.png?raw=true)
+![Alt_text](/EAGLE/datapath/images/rev1_ms_subsystem.png?raw=true)
 # 
