@@ -9,7 +9,7 @@
 - Rectifier: 2W10 Bridge Rectifier
 
 # Schematic (Image of schematic v1)
-![Alt_text](/images/power_schm1.png?raw=true)
+![Alt_text](images/power_schm1.png?raw=true)
 
 # Board (Image of board v1)
-![Alt_text](/images/power_brd1.png?raw=true)
+![Alt_text](images/power_brd1.png?raw=true)
