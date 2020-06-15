@@ -26,12 +26,13 @@
 
 | Output Name | Output to Board | Input on Board |
 | --- | --- | --- |
-| D_RST | Datapath | RST |
-| D_HLT | Datapath | HALT |
-| D_ADD_MIN | Datapath | ADD_MIN |
-| D_ADD_MIN_LG | Datapath | ADD_MIN_LG |
-| D_ADD_HR | Datapath | ADD_HR |
-| D_ADD_HR_LG | Datapath | ADD_HR_LG |
+| DP_RST | Datapath | RST |
+| DP_HLT | Datapath | HALT |
+| DP_ADD_MIN | Datapath | ADD_MIN |
+| DP_ADD_MIN_LG | Datapath | ADD_MIN_LG |
+| DP_ADD_HR | Datapath | ADD_HR |
+| DP_ADD_HR_LG | Datapath | ADD_HR_LG |
+| DS_INTSTY | Display | INTSTY |
 
 ---
 
