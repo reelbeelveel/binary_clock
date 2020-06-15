@@ -42,7 +42,7 @@
 
 ---
 
-# Components:
+## Components:
 - Female Barrel Jack (2.1mmx5.5mm) - PJ-102a
 - Voltage Regulator: L7805CV - 5VDC Regulator
 - Zener Diode: 1N4733a 5.1V Zener Diode, 7mm Pkg
