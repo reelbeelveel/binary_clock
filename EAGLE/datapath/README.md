@@ -6,9 +6,9 @@
 ---
 
 ## Schematics:
-![Datapath Schematic 1](images/rev2_ms_sec.png)
-![Datapath Schematic 2](images/rev2_min_hr.png)
-![Datapath Schematic 3](images/rev2_meridian.png)
+![Datapath Schematic 1](images/rev2_ms_sec_light.png)
+![Datapath Schematic 2](images/rev2_min_hr_light.png)
+![Datapath Schematic 3](images/rev2_meridian_light.png)
 
 ---
 
