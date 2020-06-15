@@ -13829,13 +13829,6 @@ Based on the following sources:
 <busses>
 </busses>
 <nets>
-<net name="N$2" class="0">
-<segment>
-<pinref part="AC_IN" gate="G$1" pin="2"/>
-<pinref part="BRG_RCTFR" gate="G$1" pin="~_1"/>
-<wire x1="20.32" y1="68.58" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="60_HZ" class="0">
 <segment>
 <pinref part="Z-DIODE" gate="G$1" pin="A"/>
@@ -13958,6 +13951,14 @@ Based on the following sources:
 <junction x="50.8" y="66.04"/>
 <junction x="50.8" y="48.26"/>
 <label x="101.6" y="-10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="BRG_RCTFR" gate="G$1" pin="~_1"/>
+<pinref part="AC_IN" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="66.04" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="66.04" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
