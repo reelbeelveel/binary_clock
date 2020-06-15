@@ -27,9 +27,9 @@
 
 | Input Name | Input From Board | Output on Board |
 | --- | --- | --- |
-| 5V | Power | |
-| GND | Power | |
-| 10_HZ | Power | |
+| 5V | Power | 5V |
+| GND | Power | GND |
+| 10_HZ | Power | 10_HZ_OUT |
 | RST | Control | |
 | HALT | Control | |
 | ADD_MIN | Control | |
