@@ -53,6 +53,7 @@
 
 ## TODO/Goals:
 
+- [ ] Update Board Screenshots to highres/light
 ---
 
 ## Components:
