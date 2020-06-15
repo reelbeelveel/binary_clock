@@ -12,6 +12,11 @@
 
 ---
 
+## Boards - **WORKING**
+![Board Revision 1](images/clock_datapath_board_rev1.png)
+
+---
+
 ## Board Inputs:
 
 | Input Name | Input From Board | Output on Board |
@@ -37,6 +42,21 @@
 | MIN[0:5] | Display | |
 | HR[0:3] | Display | |
 | AMPM | Display | |
+
+---
+
+## TODO/Goals:
+
+---
+
+## Components:
+- 1/4x 7400N (NAND)
+- 3x 74LS08N (AND)
+- 3x 7432N (OR)
+- 1x 74LS90N (Decade Counter)
+- 5x 74LS93N (Hexadecimal Counter)
+- 1/2x 74LS109N (JKFF)
+- 1x 74LS283N (Adder)
 
 ---
 
