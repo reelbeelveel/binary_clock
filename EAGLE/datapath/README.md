@@ -15,10 +15,10 @@
 ## Board Inputs:
 
 | Input Name | Input From Board | Output on Board |
+| --- | --- | --- |
 | 5V | Power | |
 | GND | Power | |
 | 10_HZ | Power | |
-| --- | --- | --- |
 | RST | Control | |
 | HALT | Control | |
 | ADD_MIN | Control | |
@@ -31,6 +31,7 @@
 ## Board Outputs:
 
 | Output Name | Output to Board | Input on Board |
+| --- | --- | --- |
 | MS[0:3] | Display | |
 | SEC[0:5] | Display | |
 | MIN[0:5] | Display | |
