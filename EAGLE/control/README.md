@@ -7,9 +7,21 @@
 
 ## Schematics
 
+![Control Schematic 1](images/control_sch_rev1_muxesi_light.png)
+
+---
+
+![Control Schematic 2](images/control_sch_rev1_switches_light.png)
+
+---
+
+![Control Schematic 3](images/control_sch_rev1_misc_light.png)
+
 ---
 
 ## Boards
+
+![Control Board 1](images/control_brd_rev1_full_light.png)
 
 ---
 
@@ -17,7 +29,8 @@
 
 | Input Name | Input from Board | Output on Board |
 | --- | --- | --- |
-| 5V | Power | 5V |
+| +5V | Power | 5V |
+| +5V~ | Power | 5V~ |
 | GND | Power | GND |
 
 ---
@@ -28,11 +41,13 @@
 | --- | --- | --- |
 | DP_RST | Datapath | RST |
 | DP_HLT | Datapath | HALT |
-| DP_ADD_MIN | Datapath | ADD_MIN |
-| DP_ADD_MIN_LG | Datapath | ADD_MIN_LG |
-| DP_ADD_HR | Datapath | ADD_HR |
-| DP_ADD_HR_LG | Datapath | ADD_HR_LG |
+| DP_MIN+ | Datapath | ADD_MIN |
+| DP_MIN++ | Datapath | ADD_MIN_LG |
+| DP_HR+ | Datapath | ADD_HR |
+| DP_HR++ | Datapath | ADD_HR_LG |
 | DS_INTSTY | Display | INTSTY |
+| +5V~ | Display | +5V |
+| GND | Display | GND |
 
 ---
 
@@ -46,5 +61,5 @@
 
 ---
 
-README revised 6/15/2020
+README revised 6/16/2020
 

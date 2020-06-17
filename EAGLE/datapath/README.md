@@ -30,12 +30,12 @@
 | 5V | Power | 5V |
 | GND | Power | GND |
 | 10_HZ | Power | 10_HZ_OUT |
-| RST | Control | |
-| HALT | Control | |
-| ADD_MIN | Control | |
-| ADD_MIN_LG | Control | |
-| ADD_HR | Control | |
-| ADD_HR_LG | Control | |
+| RST | Control | DP_RST |
+| HALT | Control | DP_HLT |
+| ADD_MIN | Control | DP_MIN+ |
+| ADD_MIN_LG | Control | DP_MIN++ |
+| ADD_HR | Control | DP_HR+ |
+| ADD_HR_LG | Control | DP_HR++ |
 
 ---
 
@@ -67,4 +67,4 @@
 
 ---
 
-README revised 6/15/2020
+README revised 6/16/2020
