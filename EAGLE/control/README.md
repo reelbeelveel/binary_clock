@@ -52,12 +52,15 @@
 ---
 
 ## TODO/Goals:
-- [ ] Brightness Control?
-- [ ] Debounce Inputs 
+- [x] Brightness Control?
+- [x] Debounce Inputs
+- [ ] Add connectors/offload switches to daughterboard
 
 ---
 
 ## Components:
+
+- To be updated soon
 
 ---
 
