@@ -7,7 +7,7 @@
 
 ## Schematics
 
-![Control Schematic 1](images/control_sch_rev1_muxesi_light.png)
+![Control Schematic 1](images/control_sch_rev1_muxes_light.png)
 
 ---
 
